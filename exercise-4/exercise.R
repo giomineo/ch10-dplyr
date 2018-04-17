@@ -47,7 +47,7 @@ mean(to_seatac$airtime_gained, na.rm = TRUE)
 # of those flights? Bonus: use pipes to answer this question in one statement
 # (without showing any other data)!
 filter(flights, origin=="JFK", dest=="SEA") %>% 
-  summarize(
+  summarise(
     avg_air_time = mean(air_time, na.rm = TRUE),
     max_air_time = max(air_time, na.rm = TRUE),
     min_air_time = min(air_time, na.rm = TRUE)
